@@ -1,0 +1,121 @@
+/****************主界面背景*******************/
+QWidget{
+/*        background-image: url(:/images/background_02.jpg);*/
+    padding: 0px;
+/*    border-radius: 5px;*/
+    margin: 0px;
+    color:black;
+}
+QWidget#titleWidget{
+    border-bottom: 1px solid #ADD8E6;
+}
+
+/****************按钮部件*******************/
+QPushButton{
+/*    background-color:#3dce3d;*/
+    background-color:rgba(14 , 150 , 254, 150);
+    width:10em;
+    height:2em;
+    border-width: 4px;  /*边框宽度为4像素*/
+    border-radius: 10px; /*边框圆角半径*/
+    border-color: rgba(255, 225, 255, 100);/*边框颜色*/
+    font: bold 14px;/*字体*/
+    /*color:rgba(0, 0, 0, 150);*/   /*字体颜色*/
+    padding: 6px; /*填衬*/
+}
+
+QPushButton:hover{ /*鼠标悬停在按钮上时*/
+    background-color:rgba(14 , 150 , 254, 200);
+    border-color: rgba(255, 225, 255, 100);
+    color:rgba(0, 0, 0, 200);
+}
+
+QPushButton:pressed { /*按钮被按下时*/
+     background-color:rgba(14 , 150 , 254, 255);
+     border-color: rgba(255, 225, 255, 200);
+     color:rgba(0, 0, 0, 255);
+}
+
+/*登录按钮*/
+QPushButton#loginButton{
+    background-color:rgba(61,206,61, 150);
+}
+
+QPushButton#loginButton:hover{ /*鼠标悬停在按钮上时*/
+    background-color:rgba(61,206,61, 200);
+}
+
+QPushButton#loginButton:pressed { /*按钮被按下时*/
+     background-color:rgba(61,206,61, 255);
+}
+
+
+/*******************输入框*******************/
+QLineEdit, QComboBox
+{
+    font: 16px;
+    font-family: Times New Roman;
+    background:white;
+    padding-left:1px ;
+    padding-top:1px ;
+    height:2em;
+    width:3em;
+    border-radius:5px;
+/*    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;*/
+
+    border: 1px solid rgb(209 , 209 , 209);
+    border-top:transparent;
+}
+QLineEdit:hover
+{
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+
+
+/************标签样式*********/
+
+QLabel{
+/*    color:#333333;*/
+    background:transparent;
+    font-family:Microsoft YaHei;
+    font-size:18px;
+    height:2.5em;
+}
+
+/****************标题栏**********************/
+QLabel#titleLabel{
+    font-size: 26px;
+}
+
+QToolButtun{
+    padding: 2px;
+    background-color:transparent;
+}
+
+/***最小化按钮******/
+QToolButtun#minToolButton{
+/*    border-image:url(:/images/min.png);*/
+}
+
+QToolButtun#minToolButton:hover{
+
+}
+
+QToolButtun#minToolButton:pressed{
+
+}
+/***关闭按钮***/
+QToolButtun#closeToolButton{
+/*    border-image:url(:/images/close.png);*/
+}
+QToolButtun#closeToolButton:hover{
+
+}
+
+QToolButtun#closeToolButton:pressed{
+
+}
+
+
